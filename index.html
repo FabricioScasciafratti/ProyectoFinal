@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv</title>
+
+    <link rel="icon" type="image/x-icon" href="https://icon-library.com/images/curriculum-vitae-icon/curriculum-vitae-icon-2.jpg">
+    
+    <!--  tipografia Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    
+    <!--link del Css-->
+     <link rel="stylesheet" href="Css/estilos.Css">
+
+     <!-- script de font awesome-->
+    <script src="https://kit.fontawesome.com/db8c6a676b.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+
+
+    <header class="titulo"> 
+        <h1> Curriculum vitae</h1>
+    </header>
+  
+  
+<div class="grid-container">
+  
+    <div class="izquierda" >
+     <span class="bar" onclick="openNav()"> <i class="fa-solid fa-bars"></i></span>
+    <nav  class="menu" id="miMenu"> 
+        
+        <span class="close" onclick="closeNav()" id="cerrar">&times</span>
+         
+          <div class="foto"> 
+           <img id="imagen" src="	https://randomuser.me/api/portraits/men/47.jpg" alt="Foto de perfil" class="imagen">
+          </div>
+        
+            <a href="#perfil" class="active"> Perfil<i class="fa-solid fa-user"></i>  </a>
+            <a href="#objet"> Objetivos<i class="fa-solid fa-bullseye"></i> </a> 
+            <a href="#datos"> Datos personales<i class="fa-solid fa-address-card"></i> </a>
+            <a href="#formacion">Formación académica <i class="fa-solid fa-user-graduate"></i> </a> 
+            <a href="#laboral">  Experiencia laboral<i class="fa-solid fa-briefcase"></i></a>
+            <a href="#habilidades"> Habilidades<i class="fa-solid fa-users-gear"></i> </a>  
+            <a href="#contactos"> contactos<i class="fa-solid fa-phone"></i> </a> 
+    </nav>
+
+    <!-- El Modal -->
+    <div id="myModal" class="modal">
+        <span class="closeimg">&times</span>
+        <img class="modal-content" id="img01">
+         <div id="caption"></div>
+    </div>
+       
+    </div>
+
+
+      
+    <div class="derecha">
+        
+        <div class="perfil" id="perfil"> 
+           <p class="subtitulo">Perfil profesional</p>
+    
+           <p id="presentacion">Mi nombre es  Steven Burns</p> 
+           <p>Me considero una persona responsable, dinámica y creativa, con facilidad para adaptarme y 
+                capacidad para trabajar en equipo. Además, cuento con aptitudes de liderazgo y
+                 facilidad para relacionarme con las personas, 
+                con predisposición para aprender y adquirir experiencia en el ámbito laboral.</p>
+        </div>
+
+        <div class="objetivos" id="objet">
+            <p class="subtitulo"> Objetivos</p>
+            <p>Formar parte de una empresa que me permita adquirir experiencia en el ámbito laboral y
+            poner en práctica los conocimientos adquirido en mi formación académica. 
+            Además, que me brinde la oportunidad de crecer y desarrollarme profesionalmente.</p>
+        </div>
+
+        <div class="datos" id="datos">
+            <p class="subtitulo">Datos personales</p> 
+                <ul>
+                    <li class="lista">Nacionalidad: Argentino</li>
+                    <li class="lista">Localidad: Rosario, Santa Fe</li>
+                    <li class="lista">Edad: 24 años</li>
+                    <li class="lista">Fecha de nacimiento: 28/09/98</li>
+                    <li class="lista">DNI:41491425</li>
+                    <li class="lista">Estado civil: Soltero</li>
+                </ul>
+        </div>
+
+
+        <div class="formacion" id="formacion">
+            <p class="subtitulo">Formación académica</p>
+            <span>Curso de Programación</span>
+                <ul>
+                    <li class="lista">Introduccion a la programacion en el lenguaje JavaScrip, 
+                    certificado por la fundacion Telefonica Movistar.</li>
+                    <li class="lista">Desarrolador Web Front end, realizado en Ticmas. </li>
+                </ul>
+            <span>Estudios universitarios</span>
+
+            <p>Cursando el tercer año de la carrera de Profesorado en Química 
+               de la Facultad de Ciencias Bioquímicas y Farmacéuticas de la U.N.R</p>
+
+            <span>Estuidios Secundarios</span> 
+            <p> Cursados los dos primeros años en el Instituto Superior Particular 
+                Incorporado Zona Oeste Nº9045 en la modalidad Bachiller en “Economía y 
+                administración” y finalizando los estudios en la Escuela de 
+                Enseñanzas Medias Nº258 “Soldados argentinos”. Modalidad “Economía y 
+                administración”. Egresado en el año 2016.</p>
+            
+            <span>Estudios primarios</span>
+            <p>Egresado en el año 2011, en el Colegio Provincial “Cayetano Silva” </p>
+
+        </div>
+
+
+        <div class="experiencias" id="laboral">
+            <p class="subtitulo">Experiencia laboral</p>
+            <span>Cajero en Heladería</span> 
+            <p>Tareas realizadas:</p>
+            <ul>
+                <li class="lista"> Realizar la atención al cliente.</li>
+                <li class="lista">Gestionar los cobros por distintos medios de pagos, en efectivos y tarjeta.</li>  
+                <li class="lista">Reposición de mercadería.</li> 
+                <li class="lista">Realizar el stock de la mercadería.</li>  
+                <li class="lista">Limpieza y mantenimiento del local.</li> 
+            </ul>
+        
+        </div>
+        <div class="habilidades" id="habilidades">
+            <p class="subtitulo">Habilidades</p>
+            <ul>
+                <li class="lista">Una buena comunicación verbal</li>
+                <li class="lista">Asumir las críticas de forma constructiva</li>
+                <li class="lista">Organizado</li>
+                <li class="lista">La facilidad para trabajar en equipo</li>
+                <li class="lista">El pensamiento crítico/lógico</li>
+                <li class="lista">Empatía</li>
+                <li class="lista">Adaptación</li>
+                <li class="lista">Creatividad</li>
+            </ul>
+        </div>
+
+        <div class="contactos" id="contactos">
+            <p class="subtitulo"> Contacto</p>
+            <ul class="contacto">
+                <li class="lista">Direccion: 4119 Adams St</li>
+                <li class="lista">Telefono: (957) 557-2331 </li>
+                <li class="lista">E-mail: steven.burns@example.com</li>
+                <li class="lista"><i href="https://ar.linkedin.com/" class="fa-brands fa-linkedin" ></i></li>
+            </ul>   
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="Js/main.js"></script>
+
+</body>
+
+</html>
